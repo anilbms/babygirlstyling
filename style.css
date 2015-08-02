@@ -1,46 +1,50 @@
 .container {
-  display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
 }
 
-.baby-girl, .form-control {
-  flex: 1;
+.baby-girl,
+.form-control {
+    flex: 1;
 }
+
 .baby-girl {
-  padding: 15px;
-  margin: 15px;
+    padding: 15px;
+    margin: 15px;
 }
 
 .hair {
-  width: 200px;
-  height:170px;
-  background: #666666;
-  border-radius: 100px 100px 0 0;
-  position: relative;
-  z-index: 200;
+    width: 200px;
+    height: 170px;
+    background: #666666;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    z-index: 200;
 }
 
 .eye {
-  width: 16px;
-  height: 20px;
-  background: #666;
-  border-radius: 14px;
-  position: relative;
-  top: 20px;
-  display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: #666;
+    border-radius: 14px;
+    position: relative;
+    top: 20px;
+    display: inline-block;
 }
 
 .eye-left {
-  left: 30px;
+    left: 30px;
 }
 
 .eye-right {
-  left: 60px;
+    left: 60px;
 }
 
 .cheeck-left {
-  left: -25px;
+    left: -25px;
 }
 
 .cheeck-right {
-  left: 25px;
+    left: 25px;
 }

@@ -4,6 +4,7 @@
         $dressColor = $('#dress-color'),
         $skinColor = $('#skin-color'),
         $lipstickColor = $('#lipstick-color'),
+        $girlScale = $('#girl-scale'),
         code = $('#code'),
         old = null,
         $head = $('head');
@@ -114,7 +115,7 @@
 				'}'+
 				'.hand {'+
 					'position: absolute;'+
-					'top: 400px;'+
+					'top: 320px;'+
 				    'border-top: 75px solid '+ $skinColor.val() + ';' +
 				    'border-left: 10px solid rgba(0, 0, 0, 0);'+
 				    'border-right: 10px solid rgba(0, 0, 0, 0);'+
@@ -133,16 +134,16 @@
 				    'top: -5px;'+
 				'}\n'+
 				'.hand-left {'+
-				    'left: 12px;'+
+				    'left: -17px;'+
 				    'transform: rotateZ(18deg);'+
 				'}\n'+
 				'.hand-right {'+
-				    'left: 225px;'+
+				    'left: 205px;'+
 				    'transform: rotateZ(-18deg);'+
 				'}\n'+
 				'.leg {'+
 					'position: absolute;'+
-					'top: 700px;'+
+					'top: 600px;'+
 				    'border-top: 101px solid  '+ $skinColor.val() + ';' +
 				    'border-left: 10px solid rgba(0, 0, 0, 0);'+
 				    'border-right: 10px solid rgba(0, 0, 0, 0);'+
@@ -161,11 +162,14 @@
 				    'top: -5px;'+
 				'}\n'+
 				'.leg-left {'+
-				    'left: 50px;'+
+				    'left: 40px;'+
 			    '}\n'+
 			    '.leg-right {'+
-				    'left: 170px;'+
-			    '}\n';
+				    'left: 150px;'+
+			    '}\n' +
+			    '.baby-girl {' +
+					'transform: scale('+ $girlScale.val()/100 +'); \n' +
+				'}\n';
         if (old) {
             old.parentNode.removeChild(old);
         }
